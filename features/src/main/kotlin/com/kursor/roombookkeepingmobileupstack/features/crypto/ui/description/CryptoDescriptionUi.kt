@@ -32,33 +32,36 @@ fun CryptoDescriptionUi(
 
     Scaffold(
         topBar = {
-            Column(
-                verticalArrangement = Arrangement.Center
+            Surface(
+                elevation = 12.dp,
+                modifier = Modifier.fillMaxWidth()
             ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    IconButton(
-                        modifier = Modifier.padding(6.dp),
-                        onClick = { component.onBackButtonPressed() }
-                    ) {
-                        Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = "back")
+                Column(
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        IconButton(
+                            modifier = Modifier.padding(6.dp),
+                            onClick = { component.onBackButtonPressed() }
+                        ) {
+                            Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = "back")
+                        }
+                        Text(
+                            text = cryptoName,
+                            modifier = Modifier.padding(
+                                vertical = 12.dp,
+                                horizontal = 12.dp
+                            ),
+                            style = TextStyle(
+                                fontSize = 22.sp
+                            ),
+                            fontWeight = FontWeight.Bold,
+                            color = Color.Black
+                        )
                     }
-                    Text(
-                        text = cryptoName,
-                        modifier = Modifier.padding(
-                            vertical = 12.dp,
-                            horizontal = 12.dp
-                        ),
-                        style = TextStyle(
-                            fontSize = 22.sp
-                        ),
-                        fontWeight = FontWeight.Bold,
-                        color = Color.Black
-                    )
                 }
-                Divider(
-                    modifier = Modifier.height(3.dp)
-                )
             }
+
         }
     ) {
         SwipeRefreshLceWidget(

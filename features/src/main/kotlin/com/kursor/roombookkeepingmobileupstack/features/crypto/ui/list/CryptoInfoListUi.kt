@@ -44,7 +44,8 @@ fun CryptoInfoListUi(
     Scaffold(
         topBar = {
             Surface(
-                color = Color.White
+                color = Color.White,
+                elevation = 12.dp
             ) {
                 Column(
                     modifier = Modifier.fillMaxWidth()
@@ -67,7 +68,6 @@ fun CryptoInfoListUi(
                         },
                         selected = selectedCurrency
                     )
-                    Divider(modifier = Modifier.height(3.dp))
                 }
             }
 
