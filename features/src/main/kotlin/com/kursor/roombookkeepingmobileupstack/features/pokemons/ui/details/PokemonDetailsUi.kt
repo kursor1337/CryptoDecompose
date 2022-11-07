@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
+import com.kursor.roombookkeepingmobileupstack.features.R
 import com.kursor.roombookkeepingmobileupstack.core.theme.AppTheme
 import com.kursor.roombookkeepingmobileupstack.core.widget.RefreshingProgress
 import com.kursor.roombookkeepingmobileupstack.core.widget.SwipeRefreshLceWidget

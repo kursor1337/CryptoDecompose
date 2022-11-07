@@ -12,6 +12,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kursor.roombookkeepingmobileupstack.core.theme.AppTheme
+import com.kursor.roombookkeepingmobileupstack.core.R
 
 @Composable
 fun ErrorPlaceholder(

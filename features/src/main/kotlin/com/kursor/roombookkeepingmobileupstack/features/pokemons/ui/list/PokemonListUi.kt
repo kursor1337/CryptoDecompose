@@ -16,6 +16,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import me.aartikov.replica.single.Loadable
+import com.kursor.roombookkeepingmobileupstack.features.R
 import com.kursor.roombookkeepingmobileupstack.core.theme.AppTheme
 import com.kursor.roombookkeepingmobileupstack.core.widget.EmptyPlaceholder
 import com.kursor.roombookkeepingmobileupstack.core.widget.RefreshingProgress
